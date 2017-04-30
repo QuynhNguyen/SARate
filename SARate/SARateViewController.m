@@ -32,6 +32,7 @@
 
 @interface UIAlertController (Window)
 
+- (void)hide;
 - (void)show;
 - (void)show:(BOOL)animated;
 
@@ -85,6 +86,13 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
+    // precaution to insure window gets destroyed
+    self.alertWindow.hidden = YES;
+    self.alertWindow = nil;
+}
+
+- (void)hide {
+    [self dismissViewControllerAnimated:nil completion:nil];
     // precaution to insure window gets destroyed
     self.alertWindow.hidden = YES;
     self.alertWindow = nil;
@@ -255,6 +263,8 @@
     if (_mark == 0){
         
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:_setRatingAlertTitle message:_setRatingAlertTitle preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:doneAction];
         [alertController show];
         return;
     } else if (_mark >= _minAppStoreRating){
@@ -270,6 +280,7 @@
             SARateViewController *strongSelf = weakSelf;
             strongSelf.isShowed = NO;
             [[iRate sharedInstance] openRatingsPageInAppStore];
+            [alertController hide];
         }];
 
         [alertController addAction:cancelAction];
@@ -282,6 +293,8 @@
     }
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:_disadvantagesAlertTitle message:_disadvantagesAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleCancel handler:nil];
+    [alertController addAction:doneAction];
     [alertController show];
     
     [self sendMail];
@@ -312,6 +325,8 @@
         
     } else {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:_emailErrorAlertTitle message:_emailErrorAlertText preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:doneAction];
         [alertController show];
     }
 
