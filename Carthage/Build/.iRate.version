@@ -1,0 +1,21 @@
+{
+  "iOS" : [
+    {
+      "hash" : "4deb635bed6636cd391a9c59ad53fbeb34010cde4169b6d6a503414d19e1e582",
+      "name" : "iRate"
+    }
+  ],
+  "commitish" : "1.11.7",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+    {
+      "hash" : "09948d33186f0082500c8807a7ced86eacb66bebabd363e12850e37546bd8f77",
+      "name" : "iRate"
+    }
+  ]
+}

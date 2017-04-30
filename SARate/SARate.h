@@ -25,7 +25,7 @@
 //
 //
 
-#import "iRate.h"
+@import iRate;
 
 @interface SARate : iRate
 

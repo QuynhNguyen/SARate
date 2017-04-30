@@ -25,9 +25,9 @@
 //
 //
 
+@import iRate;
 #import "SARateViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import "iRate.h"
 #import <objc/runtime.h>
 
 @interface UIAlertController (Window)

@@ -12,9 +12,8 @@
 		040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F91EB5B6BC0038ADB3 /* SARateViewController.h */; };
 		040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */; };
 		040085081EB5B6D40038ADB3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040085071EB5B6D40038ADB3 /* Media.xcassets */; };
-		0400850E1EB5B7510038ADB3 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0400850B1EB5B7510038ADB3 /* iRate.bundle */; };
-		0400850F1EB5B7510038ADB3 /* iRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0400850C1EB5B7510038ADB3 /* iRate.h */; };
-		040085101EB5B7510038ADB3 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400850D1EB5B7510038ADB3 /* iRate.m */; };
+		040085121EB5BF840038ADB3 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 040085111EB5BF840038ADB3 /* Carthage */; };
+		040085151EB5BF930038ADB3 /* iRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040085141EB5BF930038ADB3 /* iRate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +22,8 @@
 		040084F91EB5B6BC0038ADB3 /* SARateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARateViewController.h; sourceTree = "<group>"; };
 		040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARateViewController.m; sourceTree = "<group>"; };
 		040085071EB5B6D40038ADB3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		0400850B1EB5B7510038ADB3 /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = iRate.bundle; path = iRate/iRate.bundle; sourceTree = "<group>"; };
-		0400850C1EB5B7510038ADB3 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iRate.h; path = iRate/iRate.h; sourceTree = "<group>"; };
-		0400850D1EB5B7510038ADB3 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iRate.m; path = iRate/iRate.m; sourceTree = "<group>"; };
+		040085111EB5BF840038ADB3 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		040085141EB5BF930038ADB3 /* iRate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iRate.framework; path = Carthage/Build/iOS/iRate.framework; sourceTree = "<group>"; };
 		040EE5651EB5B64500A413B1 /* SARate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SARate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		040EE5691EB5B64500A413B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040085151EB5BF930038ADB3 /* iRate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040085131EB5BF930038ADB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040085141EB5BF930038ADB3 /* iRate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		040EE55B1EB5B64500A413B1 = {
 			isa = PBXGroup;
 			children = (
+				040085111EB5BF840038ADB3 /* Carthage */,
 				040EE5671EB5B64500A413B1 /* SARate */,
 				040EE5661EB5B64500A413B1 /* Products */,
+				040085131EB5BF930038ADB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +69,6 @@
 		040EE5671EB5B64500A413B1 /* SARate */ = {
 			isa = PBXGroup;
 			children = (
-				0400850B1EB5B7510038ADB3 /* iRate.bundle */,
-				0400850C1EB5B7510038ADB3 /* iRate.h */,
-				0400850D1EB5B7510038ADB3 /* iRate.m */,
 				040084F71EB5B6BC0038ADB3 /* SARate.h */,
 				040084F81EB5B6BC0038ADB3 /* SARate.m */,
 				040084F91EB5B6BC0038ADB3 /* SARateViewController.h */,
@@ -80,7 +86,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0400850F1EB5B7510038ADB3 /* iRate.h in Headers */,
 				040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */,
 				040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */,
 			);
@@ -146,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				040085081EB5B6D40038ADB3 /* Media.xcassets in Resources */,
-				0400850E1EB5B7510038ADB3 /* iRate.bundle in Resources */,
+				040085121EB5BF840038ADB3 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +162,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040085101EB5B7510038ADB3 /* iRate.m in Sources */,
 				040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */,
 				040085001EB5B6BC0038ADB3 /* SARate.m in Sources */,
 			);
@@ -273,6 +277,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SARate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -291,6 +299,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SARate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
