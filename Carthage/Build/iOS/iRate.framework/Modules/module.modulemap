@@ -1,6 +1,0 @@
-framework module iRate {
-  umbrella header "iRate.h"
-
-  export *
-  module * { export * }
-}
