@@ -97,6 +97,7 @@
     // precaution to insure window gets destroyed
     self.alertWindow.hidden = YES;
     self.alertWindow = nil;
+    [self.alertWindow removeFromSuperview];
 }
 
 @end
@@ -282,7 +283,7 @@
             strongSelf.isShowed = NO;
             [[iRate sharedInstance] openRatingsPageInAppStore];
             [alertController hide];
-            [self dismissViewControllerAnimated:NO completion:nil];
+            [self.view removeFromSuperview];
         }];
 
         [alertController addAction:cancelAction];
@@ -294,12 +295,14 @@
         
     }
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:_disadvantagesAlertTitle message:_disadvantagesAlertMessage preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleCancel handler:nil];
-    [alertController addAction:doneAction];
-    [alertController show];
-    
-    [self sendMail];
+    if (!_disableEmailFeedback) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:_disadvantagesAlertTitle message:_disadvantagesAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:doneAction];
+        [alertController show];
+        
+        [self sendMail];
+    }
     
 }
 

@@ -31,6 +31,7 @@
 
 + (SARate *)sharedInstance;
 
+@property (nonatomic, assign) BOOL disableEmailFeedback;
 @property (nonatomic, strong) NSString *headerLabelText;
 @property (nonatomic, strong) NSString *descriptionLabelText;
 @property (nonatomic, strong) NSString *rateButtonLabelText;

@@ -29,6 +29,7 @@
 @interface SARateViewController : UIViewController<MFMailComposeViewControllerDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, assign) BOOL isShowed;
+@property (nonatomic, assign) BOOL disableEmailFeedback;
 
 @property (nonatomic, strong) NSString *headerLabelText;
 @property (nonatomic, strong) NSString *descriptionLabelText;

@@ -63,6 +63,7 @@
     _mySARateViewController.emailErrorAlertText = self.emailErrorAlertText;
     _mySARateViewController.okText = self.okText;
     _mySARateViewController.minAppStoreRating = self.minAppStoreRating;
+    _mySARateViewController.disableEmailFeedback = self.disableEmailFeedback;
     
     [_mySARateViewController.view setFrame:[[UIScreen mainScreen] bounds]];
     
