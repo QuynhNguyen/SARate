@@ -304,7 +304,7 @@
         
         [self sendMail];
     } else {
-        [self.view removeFromSuperview];
+        [self hideRating];
     }
     
 }
