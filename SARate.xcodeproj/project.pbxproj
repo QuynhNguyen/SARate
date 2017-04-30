@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F71EB5B6BC0038ADB3 /* SARate.h */; };
+		040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F71EB5B6BC0038ADB3 /* SARate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		040085001EB5B6BC0038ADB3 /* SARate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084F81EB5B6BC0038ADB3 /* SARate.m */; };
 		040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F91EB5B6BC0038ADB3 /* SARateViewController.h */; };
 		040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */; };
