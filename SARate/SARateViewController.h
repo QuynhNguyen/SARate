@@ -30,6 +30,7 @@
 
 @property (nonatomic, assign) BOOL isShowed;
 @property (nonatomic, assign) BOOL disableEmailFeedback;
+@property (nonatomic, assign) BOOL didRate;
 
 @property (nonatomic, strong) NSString *headerLabelText;
 @property (nonatomic, strong) NSString *descriptionLabelText;

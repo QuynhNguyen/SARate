@@ -41,7 +41,7 @@
 - (void)promptForRating
 {
     
-    if (_mySARateViewController != nil && _mySARateViewController.isShowed){
+    if (_mySARateViewController.didRate || (_mySARateViewController != nil && _mySARateViewController.isShowed)){
         return;
     }
     _mySARateViewController = [[SARateViewController alloc] init];

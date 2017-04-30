@@ -280,6 +280,7 @@
         
         UIAlertAction *rateAction = [UIAlertAction actionWithTitle:_appstoreRatingButton style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             SARateViewController *strongSelf = weakSelf;
+            strongSelf.didRate = YES;
             strongSelf.isShowed = NO;
             [[iRate sharedInstance] openRatingsPageInAppStore];
             [alertController hide];
@@ -302,6 +303,8 @@
         [alertController show];
         
         [self sendMail];
+    } else {
+        [self.view removeFromSuperview];
     }
     
 }
