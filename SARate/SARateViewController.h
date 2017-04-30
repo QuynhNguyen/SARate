@@ -1,5 +1,5 @@
 //
-//  SARate.h
+//  SARateViewController.h
 //
 // This code is distributed under the terms and conditions of the MIT license.
 //
@@ -22,14 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-//
-//
 
-#import "iRate.h"
+#import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface SARate : iRate
+@interface SARateViewController : UIViewController<MFMailComposeViewControllerDelegate, UIAlertViewDelegate>
 
-+ (SARate *)sharedInstance;
+@property (nonatomic, assign) BOOL isShowed;
 
 @property (nonatomic, strong) NSString *headerLabelText;
 @property (nonatomic, strong) NSString *descriptionLabelText;
@@ -50,5 +49,6 @@
 @property (nonatomic, strong) NSString *emailErrorAlertText;
 @property (nonatomic, strong) NSString *okText;
 @property (nonatomic, assign) int minAppStoreRating;
+
 
 @end

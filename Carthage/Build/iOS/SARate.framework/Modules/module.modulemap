@@ -1,0 +1,6 @@
+framework module SARate {
+  umbrella header "SARate.h"
+
+  export *
+  module * { export * }
+}

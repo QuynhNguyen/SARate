@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040EE56A1EB5B64500A413B1 /* SARate.h in Headers */ = {isa = PBXBuildFile; fileRef = 040EE5681EB5B64500A413B1 /* SARate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F71EB5B6BC0038ADB3 /* SARate.h */; };
+		040085001EB5B6BC0038ADB3 /* SARate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084F81EB5B6BC0038ADB3 /* SARate.m */; };
+		040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F91EB5B6BC0038ADB3 /* SARateViewController.h */; };
+		040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */; };
+		040085081EB5B6D40038ADB3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040085071EB5B6D40038ADB3 /* Media.xcassets */; };
+		0400850E1EB5B7510038ADB3 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0400850B1EB5B7510038ADB3 /* iRate.bundle */; };
+		0400850F1EB5B7510038ADB3 /* iRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0400850C1EB5B7510038ADB3 /* iRate.h */; };
+		040085101EB5B7510038ADB3 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400850D1EB5B7510038ADB3 /* iRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040084F71EB5B6BC0038ADB3 /* SARate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARate.h; sourceTree = "<group>"; };
+		040084F81EB5B6BC0038ADB3 /* SARate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARate.m; sourceTree = "<group>"; };
+		040084F91EB5B6BC0038ADB3 /* SARateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARateViewController.h; sourceTree = "<group>"; };
+		040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARateViewController.m; sourceTree = "<group>"; };
+		040085071EB5B6D40038ADB3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0400850B1EB5B7510038ADB3 /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = iRate.bundle; path = iRate/iRate.bundle; sourceTree = "<group>"; };
+		0400850C1EB5B7510038ADB3 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iRate.h; path = iRate/iRate.h; sourceTree = "<group>"; };
+		0400850D1EB5B7510038ADB3 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iRate.m; path = iRate/iRate.m; sourceTree = "<group>"; };
 		040EE5651EB5B64500A413B1 /* SARate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SARate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		040EE5681EB5B64500A413B1 /* SARate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SARate.h; sourceTree = "<group>"; };
 		040EE5691EB5B64500A413B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,8 +60,15 @@
 		040EE5671EB5B64500A413B1 /* SARate */ = {
 			isa = PBXGroup;
 			children = (
-				040EE5681EB5B64500A413B1 /* SARate.h */,
+				0400850B1EB5B7510038ADB3 /* iRate.bundle */,
+				0400850C1EB5B7510038ADB3 /* iRate.h */,
+				0400850D1EB5B7510038ADB3 /* iRate.m */,
+				040084F71EB5B6BC0038ADB3 /* SARate.h */,
+				040084F81EB5B6BC0038ADB3 /* SARate.m */,
+				040084F91EB5B6BC0038ADB3 /* SARateViewController.h */,
+				040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */,
 				040EE5691EB5B64500A413B1 /* Info.plist */,
+				040085071EB5B6D40038ADB3 /* Media.xcassets */,
 			);
 			path = SARate;
 			sourceTree = "<group>";
@@ -59,7 +80,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040EE56A1EB5B64500A413B1 /* SARate.h in Headers */,
+				0400850F1EB5B7510038ADB3 /* iRate.h in Headers */,
+				040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */,
+				040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040085081EB5B6D40038ADB3 /* Media.xcassets in Resources */,
+				0400850E1EB5B7510038ADB3 /* iRate.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040085101EB5B7510038ADB3 /* iRate.m in Sources */,
+				040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */,
+				040085001EB5B6BC0038ADB3 /* SARate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +319,7 @@
 				040EE56F1EB5B64500A413B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
