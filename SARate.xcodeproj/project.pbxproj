@@ -11,7 +11,7 @@
 		040085001EB5B6BC0038ADB3 /* SARate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084F81EB5B6BC0038ADB3 /* SARate.m */; };
 		040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 040084F91EB5B6BC0038ADB3 /* SARateViewController.h */; };
 		040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */; };
-		040085081EB5B6D40038ADB3 /* Media.xcassets in Headers */ = {isa = PBXBuildFile; fileRef = 040085071EB5B6D40038ADB3 /* Media.xcassets */; settings = {ATTRIBUTES = (Public, ); }; };
+		04D1B8AB1EB6569300C79D37 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D1B8AA1EB6569300C79D37 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +19,10 @@
 		040084F81EB5B6BC0038ADB3 /* SARate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARate.m; sourceTree = "<group>"; };
 		040084F91EB5B6BC0038ADB3 /* SARateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARateViewController.h; sourceTree = "<group>"; };
 		040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARateViewController.m; sourceTree = "<group>"; };
-		040085071EB5B6D40038ADB3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		040085141EB5BF930038ADB3 /* iRate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iRate.framework; path = Carthage/Build/iOS/iRate.framework; sourceTree = "<group>"; };
 		040EE5651EB5B64500A413B1 /* SARate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SARate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		040EE5691EB5B64500A413B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D1B8AA1EB6569300C79D37 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				040084F91EB5B6BC0038ADB3 /* SARateViewController.h */,
 				040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */,
 				040EE5691EB5B64500A413B1 /* Info.plist */,
-				040085071EB5B6D40038ADB3 /* Media.xcassets */,
+				04D1B8AA1EB6569300C79D37 /* Media.xcassets */,
 			);
 			path = SARate;
 			sourceTree = "<group>";
@@ -82,7 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				040084FF1EB5B6BC0038ADB3 /* SARate.h in Headers */,
-				040085081EB5B6D40038ADB3 /* Media.xcassets in Headers */,
 				040085011EB5B6BC0038ADB3 /* SARateViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D1B8AB1EB6569300C79D37 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
