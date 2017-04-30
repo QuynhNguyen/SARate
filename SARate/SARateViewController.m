@@ -282,6 +282,7 @@
             SARateViewController *strongSelf = weakSelf;
             strongSelf.didRate = YES;
             strongSelf.isShowed = NO;
+            [iRate sharedInstance].ratedThisVersion = YES;
             [[iRate sharedInstance] openRatingsPageInAppStore];
             [alertController hide];
             [self.view removeFromSuperview];
@@ -306,6 +307,7 @@
     } else {
         [self hideRating];
     }
+    [iRate sharedInstance].ratedThisVersion = YES;
     
 }
 
