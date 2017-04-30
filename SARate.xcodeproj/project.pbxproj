@@ -13,7 +13,6 @@
 		040085021EB5B6BC0038ADB3 /* SARateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040084FA1EB5B6BC0038ADB3 /* SARateViewController.m */; };
 		040085081EB5B6D40038ADB3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040085071EB5B6D40038ADB3 /* Media.xcassets */; };
 		040085121EB5BF840038ADB3 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 040085111EB5BF840038ADB3 /* Carthage */; };
-		040085151EB5BF930038ADB3 /* iRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040085141EB5BF930038ADB3 /* iRate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040085151EB5BF930038ADB3 /* iRate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
