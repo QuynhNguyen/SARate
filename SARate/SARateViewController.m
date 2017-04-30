@@ -92,7 +92,8 @@
 }
 
 - (void)hide {
-    [self dismissViewControllerAnimated:nil completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.alertWindow.rootViewController dismissViewControllerAnimated:NO completion:nil];
     // precaution to insure window gets destroyed
     self.alertWindow.hidden = YES;
     self.alertWindow = nil;
@@ -281,6 +282,7 @@
             strongSelf.isShowed = NO;
             [[iRate sharedInstance] openRatingsPageInAppStore];
             [alertController hide];
+            [self dismissViewControllerAnimated:NO completion:nil];
         }];
 
         [alertController addAction:cancelAction];
