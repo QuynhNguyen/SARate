@@ -9,4 +9,4 @@ SARate is a library to get positive app reviews on the AppStore.  SARate is a su
 
 ## Carthage Installation
 
-`github "https://github.com/QuynhNguyen/SARate" ~> 1.0`
+`github "https://github.com/QuynhNguyen/SARate" ~> 1.1`
