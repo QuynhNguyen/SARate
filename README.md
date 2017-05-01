@@ -2,7 +2,7 @@
 
 # SARate
 
-SARate is a library to get positive app reviews on the AppStore.  SARate is a subclass of  [iRate](https://github.com/nicklockwood/iRate). This repo is a fork from [The Original SARate](https://github.com/andrei200287/SARate). This library has been very useful for me but unfortunately the original repo is inactive and not carthage compatible.
+SARate is a library to get positive app reviews on the AppStore.  SARate is a subclass of  [iRate](https://github.com/nicklockwood/iRate). This repo is a fork from [the original SARate](https://github.com/andrei200287/SARate). This library has been very useful for me but unfortunately the original repo is inactive and not compatible with Carthage.
 
 ## Screens
 ![SARate screen](http://solovjev.com/libs/SARate/SARate1.png "SARate screen")
